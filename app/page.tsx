@@ -6,7 +6,7 @@ import Head from 'next/head';
 function Home() {
   const [key, setKey] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
     setKey(e.target.value);
   };
 
